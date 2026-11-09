@@ -13,7 +13,7 @@ export const getArticleTitleFromHref = (href: string): string | null => {
   if (!href || href.startsWith('#')) return null
   let url: URL
   try { url = new URL(href, WIKIPEDIA_ORIGIN) } catch { return null }
-  if (url.hostname !== 'en.wikipedia.org' || !url.pathname.startsWith('/wiki/') || url.search || url.hash) return null
+  if (url.hostname !== 'en.wikipedia.org' || !url.pathname.startsWith('/wiki/') || url.search) return null
   let title: string
   try { title = decodeURIComponent(url.pathname.slice('/wiki/'.length)).replaceAll('_', ' ').trim() } catch { return null }
   if (!title) return null
