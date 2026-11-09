@@ -1,0 +1,3 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Libre+Franklin:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap');
+:root { font-family:'Libre Franklin',Arial,sans-serif; color:#171713; background:#f4efe3; font-synthesis:none; text-rendering:optimizeLegibility; --paper:#f4efe3; --paper-light:#fbf8f0; --ink:#171713; --muted:#69665d; --blue:#1749cc; --orange:#e55c25; --line:#27271f }
+*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;min-width:320px;min-height:100vh} button,input{font:inherit} button{color:inherit} a{color:inherit} ::selection{color:#fff;background:var(--blue)}
